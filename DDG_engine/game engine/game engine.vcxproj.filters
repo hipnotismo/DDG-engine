@@ -15,8 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseGame.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseGame.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Export.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

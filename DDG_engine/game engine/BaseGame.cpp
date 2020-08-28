@@ -1,17 +1,17 @@
-#include "Window.h"
+#include "BaseGame.h"
 #include <stdlib.h>
 #include <string>
 #include <iostream>
 #include "glew.h"
 #include "glfw3.h"
 
-Window::Window() {
+BaseGame::BaseGame() {
 
 }
-Window::~Window() {
+BaseGame::~BaseGame() {
 
 }
-int Window::StartWindow(int width, int height, const char* windowName) {
+int BaseGame::StartWindow(int width, int height, const char* windowName) {
 	GLFWwindow* window;
 
 	//Initialize the library /
