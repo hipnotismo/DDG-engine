@@ -24,6 +24,9 @@
     <ClCompile Include="Window.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseGame.h">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
