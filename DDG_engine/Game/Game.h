@@ -1,17 +1,4 @@
-#ifndef GAME_H
-#define GAME_H
-#include "BaseGame.h"
-class Game : public BaseGame {
 
-public:
-	Game();
-	~Game();
-	int initGame();
-};
-
-#endif // !GAME_H
-
-/*
 #ifndef GAME_H
 #define GAME_H
 #include "BaseGame.h"
@@ -25,4 +12,3 @@ public:
 	int init();
 };
 #endif // !GAME_H
-*/
