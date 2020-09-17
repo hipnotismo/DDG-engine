@@ -35,10 +35,10 @@
     <ClInclude Include="Export.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Archivos de origen</Filter>
-    </ClInclude>
     <ClInclude Include="renderer.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

@@ -8,6 +8,6 @@ Game::~Game() {
 }
 
 int Game::init() {
-	StartWindow(1280, 720, "Hello World");
+	engine.ventana.StartWindow(1280, 720, "Hello World");
 	return 0;
 }

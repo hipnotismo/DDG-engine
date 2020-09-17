@@ -9,6 +9,7 @@ class Game : public Window {
 public:
 	Game();
 	~Game();
+	BaseGame engine;
 	int init();
 };
 #endif // !GAME_H
