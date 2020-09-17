@@ -13,3 +13,18 @@ BaseGame::~BaseGame() {
 
 }
 
+int BaseGame::StartWindow(int width, int height, const char* windowName)
+{
+	return ventana.StartWindow(width, height, windowName);
+}
+
+void BaseGame::CloseWindow()
+{
+	ventana.CloseWindow();
+}
+
+void BaseGame::drawTriangle()
+{
+	render.DrawTriangle();
+}
+

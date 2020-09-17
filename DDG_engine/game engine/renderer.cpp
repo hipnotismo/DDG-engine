@@ -10,6 +10,7 @@ Renderer::~Renderer() {
 
 }
 void Renderer::CreateTriangle() {
+	///*
 	float vertexs[6] = {
 		-0.5f, -0.5f,
 		 0.5f, -0.5f,
@@ -23,7 +24,13 @@ void Renderer::CreateTriangle() {
 
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0);
+	//*/
 }
 void Renderer::DrawTriangle() {
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	//glDrawArrays(GL_TRIANGLES, 0, 3);
+	glBegin(GL_TRIANGLES);
+	glVertex2f(-0.5f, -0.5f);
+	glVertex2f(0.5f, -0.5f );
+	glVertex2f(0.0f, 0.5f );
+	glEnd();
 }
