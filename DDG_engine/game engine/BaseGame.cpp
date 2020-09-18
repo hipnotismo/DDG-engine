@@ -13,9 +13,9 @@ BaseGame::~BaseGame() {
 
 }
 
-int BaseGame::StartWindow(int width, int height, const char* windowName)
+int BaseGame::StartWindow(int width, int height, const char* windowName )
 {
-	return ventana.StartWindow(width, height, windowName);
+	return ventana.Start(width, height, windowName);
 }
 
 void BaseGame::CloseWindow()
@@ -23,8 +23,10 @@ void BaseGame::CloseWindow()
 	ventana.CloseWindow();
 }
 
-void BaseGame::drawTriangle()
+void BaseGame::drawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3)
+//void BaseGame::drawTriangle()
 {
-	render.DrawTriangle();
+	//render.DrawTriangle();
+	render.DrawTriangle(pos1, pos2, pos3);
 }
 

@@ -4,14 +4,20 @@
 
 #include "export.h"
 
+#include <stdlib.h>
+#include <string>
+#include <iostream>
+#include "glew.h"
+#include "glfw3.h"
+
 class ENGINE_API Window {
 
 public:
 	Window();
 	~Window();
-
-	int StartWindow(int width, int height, const char* windowName);
-	void ClearBackground();
+	GLFWwindow* window;
+	int Start(int width, int height, const char* windowName);
+	static void ClearBackground();
 	int WindowShouldClose();
 	void FinishWindowCycle();
 	void CloseWindow();

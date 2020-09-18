@@ -6,6 +6,7 @@
 
 class Game : public Window {
 
+	
 public:
 	Game();
 	~Game();

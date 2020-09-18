@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="BaseGame.h" />
     <ClInclude Include="Export.h" />
+    <ClInclude Include="Global.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
