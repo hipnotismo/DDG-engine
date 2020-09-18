@@ -15,8 +15,6 @@ int Window::Start(int width, int height, const char* windowName)
 	if (!glfwInit())
 		return -1;
 
-	
-
 	// Create a windowed mode window and its OpenGL context /
 	window = glfwCreateWindow(width, height, windowName, NULL, NULL);
 	if (!window)
@@ -46,9 +44,8 @@ int Window::WindowShouldClose()
 
 void Window::FinishWindowCycle()
 {
-	// Swap front and back buffers /
+		// Swap front and back buffers /
 		glfwSwapBuffers(window);
-
 
 		// Poll for and process events 
 		glfwPollEvents();

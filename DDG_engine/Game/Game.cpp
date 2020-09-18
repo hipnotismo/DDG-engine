@@ -19,8 +19,6 @@ int Game::init() {
 		Vec2 pos3 = { 0.0f, 0.5f };
 		engine.render.DrawTriangle(pos1, pos2, pos3);
 
-
-		//engine.drawTriangle();
 		engine.ventana.FinishWindowCycle();
 	
 	}

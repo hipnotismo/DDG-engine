@@ -8,17 +8,11 @@ Renderer::~Renderer() {
 }
 
 void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
-	//void Renderer::DrawTriangle() {
-	/*
+	
 	float vertexs[6] = {
-		-0.5f, -0.5f,
-		 0.5f, -0.5f,
-		 0.0f, 0.5f
-	};*/
-	float vertexs[6] = {
-		-0.5f, -0.5f,
-		 0.5f, -0.5f,
-		 0.0f, 0.5f
+		pos1.x, pos1.y,
+		pos2.x, pos2.y,
+		pos3.x, pos3.y
 	};
 	
 	GLuint buffer;
@@ -31,11 +25,5 @@ void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
 
 
 		glDrawArrays(GL_TRIANGLES, 0, 3);
-		/*
-	//glDrawArrays(GL_TRIANGLES, 0, 3);
-	glBegin(GL_TRIANGLES);
-	glVertex2f(-0.5f, -0.5f);
-	glVertex2f(0.5f, -0.5f );
-	glVertex2f(0.0f, 0.5f );
-	glEnd();*/
+	
 }

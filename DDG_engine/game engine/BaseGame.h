@@ -21,6 +21,6 @@ public:
 	int StartWindow(int width, int height, const char* windowName);
 	void CloseWindow();
 	void drawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3);
-	//void drawTriangle();
+
 };
 #endif // !BASEGAME_H

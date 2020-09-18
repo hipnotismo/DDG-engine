@@ -15,7 +15,7 @@ public:
 	Renderer();
 	~Renderer();
 	void DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3);
-	//void DrawTriangle();
+
 };
 
 #endif // !RENDERER_H

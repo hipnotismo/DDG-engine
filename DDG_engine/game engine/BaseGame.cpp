@@ -24,9 +24,9 @@ void BaseGame::CloseWindow()
 }
 
 void BaseGame::drawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3)
-//void BaseGame::drawTriangle()
+
 {
-	//render.DrawTriangle();
+
 	render.DrawTriangle(pos1, pos2, pos3);
 }
 
