@@ -2,10 +2,7 @@
 
 Renderer::Renderer() {
 	i = 0;
-	for (int j = 0; j < 100; j++)
-	{
-		buffer[j] = NULL;
-	}
+
 	
 }
 Renderer::~Renderer() {
@@ -20,8 +17,8 @@ void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
 		pos3.x, pos3.y
 	};
 	
-	glGenBuffers(1, &buffer[i]);
-	glBindBuffer(GL_ARRAY_BUFFER, buffer[i]);
+	glGenBuffers(1, &buffer);
+	glBindBuffer(GL_ARRAY_BUFFER, buffer);
 	glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(vertexs), vertexs, GL_STATIC_DRAW);
 
 	glEnableVertexAttribArray(0);
@@ -29,14 +26,10 @@ void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
 
 
 		glDrawArrays(GL_TRIANGLES, 0, 3);
-		i++;
+		buffer = NULL;
 }
 
 void Renderer::finishRenderCycle()
 {
-	i = 0;
-	for (int j = 0; j < 100; j++)
-	{
-		buffer[j] = NULL;
-	}
+
 }

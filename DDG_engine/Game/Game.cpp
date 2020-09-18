@@ -27,7 +27,6 @@ int Game::init() {
 		engine.render.DrawTriangle(pos1, pos2, pos3);
 
 		engine.ventana.FinishWindowCycle();
-		engine.render.finishRenderCycle();
 	
 	}
 	engine.CloseWindow();

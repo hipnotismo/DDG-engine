@@ -15,7 +15,7 @@ public:
 	void DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3);
 	void finishRenderCycle();
 	int i;
-	GLuint buffer[100];
+	GLuint buffer;
 
 };
 
