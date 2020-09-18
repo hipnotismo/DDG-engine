@@ -2,8 +2,6 @@
 #define RENDERER_H
 #include "export.h"
 
-#include <stdlib.h>
-#include <iostream>
 #include "glew.h"
 #include "glfw3.h"
 

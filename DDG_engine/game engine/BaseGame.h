@@ -16,7 +16,6 @@ public:
 	BaseGame();
 	~BaseGame();
 	Window ventana;
-
 	Renderer render;
 	int StartWindow(int width, int height, const char* windowName);
 	void CloseWindow();

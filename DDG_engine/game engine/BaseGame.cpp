@@ -7,7 +7,8 @@
 #include "glfw3.h"
 
 BaseGame::BaseGame() {
-
+	//ventana = new Window();
+	//render = new Renderer();
 }
 BaseGame::~BaseGame() {
 

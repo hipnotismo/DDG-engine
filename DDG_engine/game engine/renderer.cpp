@@ -35,4 +35,8 @@ void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
 void Renderer::finishRenderCycle()
 {
 	i = 0;
+	for (int j = 0; i < 100; i++)
+	{
+		buffer[j] = NULL;
+	}
 }
