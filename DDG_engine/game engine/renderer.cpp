@@ -2,7 +2,7 @@
 
 Renderer::Renderer() {
 	i = 0;
-	for (int j = 0; i < 100; i++)
+	for (int j = 0; j < 100; j++)
 	{
 		buffer[j] = NULL;
 	}
@@ -35,7 +35,7 @@ void Renderer::DrawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3) {
 void Renderer::finishRenderCycle()
 {
 	i = 0;
-	for (int j = 0; i < 100; i++)
+	for (int j = 0; j < 100; j++)
 	{
 		buffer[j] = NULL;
 	}
