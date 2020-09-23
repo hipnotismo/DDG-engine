@@ -1,7 +1,7 @@
 
 #ifndef GAME_H
 #define GAME_H
-#include "BaseGame.h"
+#include "Game engine/Base game/baseGame.h"
 
 class Game : public Window {
 

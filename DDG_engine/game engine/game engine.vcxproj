@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\Game engine\Base game\baseGame.cpp" />
+    <ClCompile Include="..\Src\Game engine\DllMain\dllMain.cpp" />
+    <ClCompile Include="..\Src\Game engine\Renderer\renderer.cpp" />
+    <ClCompile Include="..\Src\Game engine\Window\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Game engine\Base game\baseGame.h" />
+    <ClInclude Include="..\Src\Game engine\Export\export.h" />
+    <ClInclude Include="..\Src\Game engine\Global\global.h" />
+    <ClInclude Include="..\Src\Game engine\Renderer\renderer.h" />
+    <ClInclude Include="..\Src\Game engine\Window\window.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{B0BE7637-9FE7-4272-85AC-C8C76830AEA8}</ProjectGuid>
@@ -69,14 +82,21 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Lib\glfw\include\GLFW;$(SolutionDir)Lib\glm\glm;$(SolutionDir)Lib\glew\include\GL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Lib\glfw\include\GLFW;$(SolutionDir)Lib\glm\glm;$(SolutionDir)Src;$(SolutionDir)Lib\glew\include\GL</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,19 +145,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BaseGame.cpp" />
-    <ClCompile Include="DllMain.cpp" />
-    <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="Window.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseGame.h" />
-    <ClInclude Include="Export.h" />
-    <ClInclude Include="Global.h" />
-    <ClInclude Include="renderer.h" />
-    <ClInclude Include="Window.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
