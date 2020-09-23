@@ -2,11 +2,12 @@
 #ifndef BASEGAME_H
 #define BASEGAME_H
 
-#include "Game engine/Export/export.h"
+#include "export.h"
 
-#include "Game engine/Window/window.h"
-#include "Game engine/Renderer/renderer.h"
-#include "Game engine/Global/global.h"
+#include "Window.h"
+#include "renderer.h"
+
+#include "Global.h"
 
 
 class ENGINE_API BaseGame {

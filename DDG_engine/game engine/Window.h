@@ -2,7 +2,7 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include "Game engine/Export/export.h"
+#include "export.h"
 
 #include <stdlib.h>
 #include <string>

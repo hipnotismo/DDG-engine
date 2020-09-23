@@ -1,11 +1,11 @@
 #ifndef RENDERER_H
 #define RENDERER_H
-#include "Game engine/Export/export.h"
+#include "export.h"
 
 #include "glew.h"
 #include "glfw3.h"
 
-#include "Game engine/Global/global.h"
+#include "Global.h"
 
 class ENGINE_API Renderer {
 
