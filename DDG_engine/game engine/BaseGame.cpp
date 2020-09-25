@@ -24,7 +24,7 @@ void BaseGame::CloseWindow()
 	ventana.CloseWindow();
 }
 
-void BaseGame::drawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3)
+void BaseGame::drawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3)
 
 {
 

@@ -14,16 +14,16 @@ int Game::init() {
 	{
 		engine.ventana.ClearBackground();
 
-		Vec2 pos1 = { -0.5f, -0.5f };
-		Vec2 pos2 = { 0.5f, -0.5f };
-		Vec2 pos3 = { 0.0f, 0.5f };
+		CVec2 pos1 = { -0.5f, -0.5f, BLUE };
+		CVec2 pos2 = { 0.5f, -0.5f, BLUE };
+		CVec2 pos3 = { 0.0f, 0.5f, BLUE };
 		engine.render.DrawTriangle(pos1, pos2, pos3);
 
 
 		
-		pos1 = { -0.5f, 0.5f };
-		pos2 = { -0.6f, 0.6f };
-		pos3 = { -0.7f, 0.5f };
+		pos1 = { -0.5f, 0.5f, RED };
+		pos2 = { -0.6f, 0.6f, RED };
+		pos3 = { -0.7f, 0.5f, RED };
 		engine.render.DrawTriangle(pos1, pos2, pos3);
 
 		engine.ventana.FinishWindowCycle();

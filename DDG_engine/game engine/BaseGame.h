@@ -19,7 +19,7 @@ public:
 	Renderer render;
 	int StartWindow(int width, int height, const char* windowName);
 	void CloseWindow();
-	void drawTriangle(Vec2 pos1, Vec2 pos2, Vec2 pos3);
+	void drawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3);
 
 };
 #endif // !BASEGAME_H
