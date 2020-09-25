@@ -9,7 +9,6 @@
 #include <iostream>
 #include "glew.h"
 #include "glfw3.h"
-using namespace std;
 
 class ENGINE_API Window {
 

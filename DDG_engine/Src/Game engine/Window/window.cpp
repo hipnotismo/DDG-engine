@@ -1,52 +1,6 @@
 
 #include "Window.h"
 
-static unsigned int CompileShader(unsigned int type, const string& source)
-{
-	unsigned int id = glCreateShader(type);
-	const char* src = source.c_str();  //  source.c_str() == &source[0]
-	glShaderSource(id, 1, &src, nullptr);
-	glCompileShader(id);
-
-	int result;
-	glGetShaderiv(id, GL_COMPILE_STATUS, &result);
-	if (result == GL_FALSE) //GL_FLASE es 0, pero así se entiende más
-	{
-		int length;
-		glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length);
-		char* message = (char*)alloca(length* sizeof(char));  // hace eso para poder hace char message[length], no entendí bien como
-		glGetShaderInfoLog(id, length, &length, message);
-		cout << "failed to compile " << (type == GL_VERTEX_SHADER ? "vertex " : "frangment ") << "shader" << endl;
-		cout << message << endl;
-		glDeleteShader(id);
-		return 0;
-	}
-
-	return (id);
-
-	//leer las funciones que empiezan con gl y hacer comentario de que hacen para tener a mano
-}
-
-static unsigned int CreateShader(const string& vertexShader, const string& fragmentShader)
-{
-	unsigned int program = glCreateProgram();
-	unsigned int vs = CompileShader( GL_VERTEX_SHADER, vertexShader);
-	unsigned int fs = CompileShader(GL_FRAGMENT_SHADER, fragmentShader);
-
-	glAttachShader(program, vs);
-	glAttachShader(program, fs);
-	glLinkProgram(program);
-	glValidateProgram(program);
-
-	glAttachShader(program, vs);
-	glAttachShader(program, fs);
-
-	glDeleteShader(vs);  // borra el shader para que no se haga un obj
-	glDeleteShader(fs);	 // borra el shader para que no se haga un obj
-
-	return program;
-	//leer las funciones que empiezan con gl y hacer comentario de que hacen para tener a mano
-}
 
 Window::Window() {
 
