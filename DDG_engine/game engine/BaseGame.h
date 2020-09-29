@@ -20,6 +20,6 @@ public:
 	int StartWindow(int width, int height, const char* windowName);
 	void CloseWindow();
 	void drawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3);
-
+	void update();
 };
 #endif // !BASEGAME_H

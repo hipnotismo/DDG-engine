@@ -64,12 +64,12 @@ void Renderer::DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3) {
 		pos3.x, pos3.y, pos3.color.R, pos3.color.G , pos3.color.B , pos3.color.A
 	};
 	
-	glGenBuffers(1, &buffer);
+	glGenBuffers(1, &buffer); //importante
 	glBindBuffer(GL_ARRAY_BUFFER, buffer);
 	glBufferData(GL_ARRAY_BUFFER, 18 * sizeof(vertexs), vertexs, GL_STATIC_DRAW);
 
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 6, 0);
+	glEnableVertexAttribArray(0);  //importante
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 6, 0); //importante
 
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void *)(2*sizeof(float)));
@@ -102,7 +102,7 @@ void Renderer::DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3) {
 		glUseProgram(shader);
 
 
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_TRIANGLES, 0, 3); //importante
 		buffer = NULL;
 }
 
