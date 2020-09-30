@@ -1,0 +1,9 @@
+﻿  BaseGame.cpp
+  DllMain.cpp
+  Entity.cpp
+C:\Users\PC\Desktop\Proyectos\DDG-engine\DDG_engine\game engine\src\Window.h(10,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+  renderer.cpp
+C:\Users\PC\Desktop\Proyectos\DDG-engine\DDG_engine\game engine\src\renderer.h(8,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+  Window.cpp
+C:\Users\PC\Desktop\Proyectos\DDG-engine\DDG_engine\game engine\src\renderer.h(8,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
+C:\Users\PC\Desktop\Proyectos\DDG-engine\DDG_engine\game engine\src\Window.h(10,10): fatal error C1083: No se puede abrir el archivo incluir: 'glew.h': No such file or directory
