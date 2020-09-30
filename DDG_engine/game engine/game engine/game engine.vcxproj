@@ -102,6 +102,9 @@
       <AdditionalLibraryDirectories>$(SolutionDir)game engine\lib\glfw\lib-vc2019;$(SolutionDir)game engine\lib\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)game engine\game engine\bin\Debug\game engine.dll" "$(SolutionDir)Game\bin\Debug"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
