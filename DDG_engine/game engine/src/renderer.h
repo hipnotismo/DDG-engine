@@ -5,12 +5,24 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include "glew.h"
 #include "glfw3.h"
 
 using namespace std;
 
 #include "Global.h"
+
+enum ShadersType
+{
+	NONE = -1, VERTEX = 0, FRAGMENT = 1
+};
+struct ShadersSource
+{
+	string vertexSource;
+	string fragmentSource;
+};
 
 class ENGINE_API Renderer {
 

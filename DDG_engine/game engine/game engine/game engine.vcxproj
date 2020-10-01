@@ -34,6 +34,10 @@
     <ClCompile Include="..\src\renderer.cpp" />
     <ClCompile Include="..\src\Window.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\shader\fragment.shader" />
+    <None Include="..\res\shader\vertex.shader" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{B0BE7637-9FE7-4272-85AC-C8C76830AEA8}</ProjectGuid>

@@ -1,25 +1,32 @@
 #include "renderer.h"
 
+
 static unsigned int CompileShader(unsigned int type, const string& source)
 {
 	unsigned int id = glCreateShader(type);
-	const char* src = source.c_str();  //  source.c_str() == &source[0]
+
+	string sourceShaderCode;
+	ifstream sourceShaderFile;
+	sourceShaderFile.exceptions(ifstream::failbit | ifstream::badbit);
+	try
+	{
+		sourceShaderFile.open(source);
+		stringstream sourceShaderStream;
+
+		sourceShaderStream << sourceShaderFile.rdbuf();
+		sourceShaderFile.close();
+
+		sourceShaderCode = sourceShaderStream.str();
+	}
+	catch (ifstream::failure& e)
+	{
+		cout << "error de lectura del shader" << endl;
+	}
+	
+	const char* src = sourceShaderCode.c_str();
+	
 	glShaderSource(id, 1, &src, nullptr);
 	glCompileShader(id);
-
-	int result;
-	glGetShaderiv(id, GL_COMPILE_STATUS, &result);
-	if (result == GL_FALSE) //GL_FLASE es 0, pero así se entiende más
-	{
-		int length;
-		glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length);
-		char* message = (char*)alloca(length * sizeof(char));  // hace eso para poder hace char message[length], no entendí bien como
-		glGetShaderInfoLog(id, length, &length, message);
-		cout << "failed to compile " << (type == GL_VERTEX_SHADER ? "vertex " : "frangment ") << "shader" << endl;
-		cout << message << endl;
-		glDeleteShader(id);
-		return 0;
-	}
 
 	return (id);
 
@@ -74,36 +81,13 @@ void Renderer::DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3) {
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void *)(2*sizeof(float)));
 
-	string vertexShader =
-		"#version 330 core  \n"
-		"\n"
-		"layout(location = 0) in vec4 position;\n"
-		"layout(location = 1) in vec4 customColor;\n"
-		" out vec4 color;\n"
-		"\n"
-		"void main()\n"
-		"{\n"
-		"	gl_Position = position; \n"
-		"	color = customColor; \n"
-		"}\n";
 
-	string fragmentShader =
-		"#version 330 core  \n"
-		"\n"
-		"in vec4 color;\n"
-		"out vec4 outColor;\n"
-		"\n"
-		"void main()\n"
-		"{\n"
-		"	outColor = color; \n"
-		"}\n";
+	unsigned int shader = CreateShader("res/shader/vertex.shader", "res/shader/fragment.shader");
 
-		unsigned int shader = CreateShader(vertexShader, fragmentShader);
-		glUseProgram(shader);
+	glUseProgram(shader);
 
-
-		glDrawArrays(GL_TRIANGLES, 0, 3); //importante
-		buffer = NULL;
+	glDrawArrays(GL_TRIANGLES, 0, 3); //importante
+	buffer = NULL;
 }
 
 
