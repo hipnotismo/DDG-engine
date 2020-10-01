@@ -29,7 +29,7 @@ class ENGINE_API Renderer {
 public:
 	Renderer();
 	~Renderer();
-	void DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3);
+	void DrawTriangle(CVec4 pos1, CVec4 pos2, CVec4 pos3);
 	int i;
 	GLuint buffer;
 

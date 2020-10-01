@@ -63,12 +63,12 @@ Renderer::~Renderer() {
 
 }
 
-void Renderer::DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3) {
+void Renderer::DrawTriangle(CVec4 pos1, CVec4 pos2, CVec4 pos3) {
 	
-	float vertexs[18] = {
-		pos1.x, pos1.y, pos1.color.R, pos1.color.G , pos1.color.B , pos1.color.A,
-		pos2.x, pos2.y, pos2.color.R, pos2.color.G , pos2.color.B , pos2.color.A,
-		pos3.x, pos3.y, pos3.color.R, pos3.color.G , pos3.color.B , pos3.color.A
+	float vertexs[24] = {
+		pos1.x, pos1.y, pos1.z, pos1.w, pos1.color.R, pos1.color.G , pos1.color.B , pos1.color.A,
+		pos2.x, pos2.y, pos2.z, pos2.w, pos2.color.R, pos2.color.G , pos2.color.B , pos2.color.A,
+		pos3.x, pos3.y, pos3.z, pos3.w, pos3.color.R, pos3.color.G , pos3.color.B , pos3.color.A
 	};
 	
 	glGenBuffers(1, &buffer); //importante
@@ -76,10 +76,10 @@ void Renderer::DrawTriangle(CVec2 pos1, CVec2 pos2, CVec2 pos3) {
 	glBufferData(GL_ARRAY_BUFFER, 18 * sizeof(vertexs), vertexs, GL_STATIC_DRAW);
 
 	glEnableVertexAttribArray(0);  //importante
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 6, 0); //importante
+	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, sizeof(float) * 8, 0); //importante
 
 	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void *)(2*sizeof(float)));
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(float) * 8, (void *)(4*sizeof(float)));
 
 
 	unsigned int shader = CreateShader("res/shader/vertex.shader", "res/shader/fragment.shader");

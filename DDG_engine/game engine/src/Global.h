@@ -9,10 +9,12 @@ struct Color
 	float A;
 };
 
-struct CVec2
+struct CVec4
 {
 	float x;
 	float y;
+	float z;
+	float w;
 	Color color;
 };
 
