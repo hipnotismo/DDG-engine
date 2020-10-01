@@ -1,0 +1,4 @@
+﻿  Game.cpp
+  Main.cpp
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\Game\game.h(4,10): error C1083:  No se puede abrir el archivo incluir: 'BaseGame.h': No such file or directory
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\Game\game.h(4,10): error C1083:  No se puede abrir el archivo incluir: 'BaseGame.h': No such file or directory
