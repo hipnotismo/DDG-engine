@@ -1,81 +1,19 @@
-﻿  BaseGame.cpp
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(9,22): warning C4273:  'BaseGame::BaseGame': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(16,2): message :  vea la definición anterior de '{ctor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(13,23): warning C4273:  'BaseGame::~BaseGame': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(17,3): message :  vea la definición anterior de '{dtor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(18,1): warning C4273:  'BaseGame::StartWindow': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(20,6): message :  vea la definición anterior de 'StartWindow'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(23,1): warning C4273:  'BaseGame::CloseWindow': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(21,7): message :  vea la definición anterior de 'CloseWindow'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(29,1): warning C4273:  'BaseGame::drawTriangle': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(22,7): message :  vea la definición anterior de 'drawTriangle'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.cpp(35,1): warning C4273:  'BaseGame::update': vinculación de DLL incoherente
-  DllMain.cpp
-  Entity.cpp
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\BaseGame.h(23,7): message :  vea la definición anterior de 'update'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(10,21): warning C4251:  'TRS::translate': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(11,21): warning C4251:  'TRS::rotationX': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(12,21): warning C4251:  'TRS::rotationY': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(13,21): warning C4251:  'TRS::rotationZ': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(14,17): warning C4251:  'TRS::scale': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(15,15): warning C4251:  'TRS::TRS': struct 'glm::mat<4,4,glm::f32,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'TRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(520): message :  vea la declaración de 'glm::mat<4,4,glm::f32,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(18,20): warning C4251:  'Transform::position': struct 'glm::vec<3,float,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'Transform'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(420): message :  vea la declaración de 'glm::vec<3,float,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(19,20): warning C4251:  'Transform::rotation': struct 'glm::vec<3,float,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'Transform'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(420): message :  vea la declaración de 'glm::vec<3,float,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(20,17): warning C4251:  'Transform::scale': struct 'glm::vec<3,float,0>' necesita tener una interfaz DLL para que la utilicen los clientes de struct 'Transform'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\lib\glm\glm\fwd.hpp(420): message :  vea la declaración de 'glm::vec<3,float,0>'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(8,1): warning C4273:  'Entity::Entity': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(25,2): message :  vea la definición anterior de '{ctor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(18,1): warning C4273:  'Entity::~Entity': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(26,3): message :  vea la definición anterior de '{dtor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(22,1): warning C4273:  'Entity::getRenderer': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(28,12): message :  vea la definición anterior de 'getRenderer'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(27,1): warning C4273:  'Entity::setPosition': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(29,7): message :  vea la definición anterior de 'setPosition'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(36,1): warning C4273:  'Entity::setRotX': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(30,7): message :  vea la definición anterior de 'setRotX'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(47,1): warning C4273:  'Entity::setRotY': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(31,7): message :  vea la definición anterior de 'setRotY'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(58,1): warning C4273:  'Entity::setRotZ': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(32,7): message :  vea la definición anterior de 'setRotZ'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(69,1): warning C4273:  'Entity::setScale': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(33,7): message :  vea la definición anterior de 'setScale'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.cpp(78,1): warning C4273:  'Entity::updateTRS': vinculación de DLL incoherente
-  renderer.cpp
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Entity.h(37,7): message :  vea la definición anterior de 'updateTRS'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(50,22): warning C4273:  'Renderer::Renderer': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(18,2): message :  vea la definición anterior de '{ctor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(55,23): warning C4273:  'Renderer::~Renderer': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(19,3): message :  vea la definición anterior de '{dtor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(59,65): warning C4273:  'Renderer::DrawTriangle': vinculación de DLL incoherente
-  Window.cpp
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(20,7): message :  vea la definición anterior de 'DrawTriangle'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(5,18): warning C4273:  'Window::Window': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(16,2): message :  vea la definición anterior de '{ctor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(8,19): warning C4273:  'Window::~Window': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(17,3): message :  vea la definición anterior de '{dtor}'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(13,1): warning C4273:  'Window::Start': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(19,6): message :  vea la definición anterior de 'Start'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(35,1): warning C4273:  'Window::ClearBackground': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(20,14): message :  vea la definición anterior de 'ClearBackground'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(41,1): warning C4273:  'Window::WindowShouldClose': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(21,6): message :  vea la definición anterior de 'WindowShouldClose'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(46,1): warning C4273:  'Window::FinishWindowCycle': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(22,7): message :  vea la definición anterior de 'FinishWindowCycle'
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(55,1): warning C4273:  'Window::CloseWindow': vinculación de DLL incoherente
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.h(23,7): message :  vea la definición anterior de 'CloseWindow'
+﻿  renderer.cpp
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(43,29): warning C4101:  'e': variable local sin referencia
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(49,29): warning C4101:  'e': variable local sin referencia
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(51,28): warning C4101:  'e': variable local sin referencia
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(108,22): warning C4273:  'Renderer::Renderer': vinculación de DLL incoherente
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(30,2): message :  vea la definición anterior de '{ctor}'
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(113,23): warning C4273:  'Renderer::~Renderer': vinculación de DLL incoherente
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(31,3): message :  vea la definición anterior de '{dtor}'
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(117,65): warning C4273:  'Renderer::DrawTriangle': vinculación de DLL incoherente
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.h(32,7): message :  vea la definición anterior de 'DrawTriangle'
      Creando biblioteca C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\game engine\bin\Release\game engine.lib y objeto C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\game engine\bin\Release\game engine.exp
   Generando código
-  Previous IPDB not found, fall back to full compilation.
-C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\Window.cpp(32): warning C4715: 'Window::Start': no todas las rutas de acceso de control devuelven un valor
-  All 133 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\src\renderer.cpp(58): warning C4715: 'ParseShader': no todas las rutas de acceso de control devuelven un valor
+  29 of 250 functions (11.6%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    39 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   game engine.vcxproj -> C:\Users\User\Desktop\Image Campus\Programacion de graficos 1\DDG-engine\DDG_engine\game engine\game engine\bin\Release\game engine.dll
           1 archivo(s) copiado(s).
