@@ -1,10 +1,9 @@
-
 #ifndef ENTITY_H
 #define ENTITY_H
 
 #include "export.h"
 #include "renderer.h"
-#include "glm.hpp"
+#include "mat4x4.hpp"
 
 struct ENGINE_API TRS {
 	glm::mat4 translate;
@@ -21,19 +20,21 @@ struct ENGINE_API Transform {
 };
 
 class ENGINE_API Entity {
+protected:
+	Renderer* _renderer;
+	TRS trs;
+	void updateTRS();
 public:
 	Entity(Renderer* renderer);
+	Entity();
 	~Entity();
 	Transform transform;
 	Renderer* getRenderer();
+	glm::mat4 getTRS();
 	void setPosition(float x, float y, float z);
 	void setRotX(float x);
 	void setRotY(float y);
 	void setRotZ(float z);
 	void setScale(float x, float y, float z);
-protected:
-	Renderer* _renderer;
-	TRS trs;
-	void updateTRS();
 };
-#endif // !WINDOW_H
+#endif // !ENTITY_H

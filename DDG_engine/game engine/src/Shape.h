@@ -3,18 +3,28 @@
 #define SHAPE_H
 
 #include "export.h"
+#include "entity.h"
+#include "global.h"
 
-#include <stdlib.h>
-#include <string>
-#include <iostream>
-#include "glew.h"
-#include "glfw3.h"
+enum SHAPES
+{
+	TRIANGLE, RECTANGLE
+};
 
-class ENGINE_API Shape {
+class ENGINE_API Shape : public Entity {
 
 public:
-	Shape();
+	Shape(SHAPES shape, Renderer* render);
 	~Shape();
+	
+	SHAPES getsType();
+	Color getColor();
 
+	void setColor(Color nColor);
+
+	SHAPES _shape;
+	Color _color;
 };
+
+
 #endif // !WINDOW_H
